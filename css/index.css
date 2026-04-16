@@ -56,9 +56,9 @@ body {
 html {
 	overflow-y: scroll;
 }
-body {
-	max-width: 40em;
-}
+/* body { */
+/* 	max-width: 40em; */
+/* } */
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
 .visually-hidden:not(:focus):not(:active) {
@@ -114,10 +114,22 @@ a[href]:active {
 	color: var(--text-color-link-active);
 }
 
+main {
+    margin: 0 auto;
+    max-width: 40em;
+}
+
 main,
 footer {
 	padding: 1rem;
+    
 }
+
+footer {
+
+    text-align: center;
+}
+
 main :first-child {
 	margin-top: 0;
 }
